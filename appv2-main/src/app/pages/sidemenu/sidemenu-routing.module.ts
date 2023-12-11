@@ -25,6 +25,10 @@ const routes: Routes = [
       },
     ]
   },
+  {
+    path: 'dispositivos',
+    loadChildren: () => import('./dispositivos/dispositivos.module').then( m => m.DispositivosPageModule)
+  },
   
 
 ];
